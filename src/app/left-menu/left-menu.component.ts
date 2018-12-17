@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./left-menu.component.css']
 })
 export class LeftMenuComponent implements OnInit {
-  expand = true;
+  static expand = true;
 
   constructor(private commonService:CommonMethodsService) {
     this.commonService.expandSideBar = this.expandSideBar;
@@ -20,12 +20,16 @@ export class LeftMenuComponent implements OnInit {
     
   }
 
+  get expand() {
+    return LeftMenuComponent.expand;
+  }
+
   public expandSideBar(event) {
     //alert("Clicked before " + this.expand);
-  this.expand = !this.expand;
+  LeftMenuComponent.expand = !LeftMenuComponent.expand;
   //this.commonService.expandSideBarFlag = !this.commonService.expandSideBarFlag;
   //this.expand = this.commonService.expandSideBarFlag;
-  alert(" expand flag" + this.expand);
+  alert(" expand flag" + LeftMenuComponent.expand);
   }
 
 }

@@ -1,6 +1,6 @@
 import { CommonMethodsService } from './../common-methods.service';
 import { LeftMenuComponent } from './../left-menu/left-menu.component';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-top-banner',
@@ -10,19 +10,22 @@ import { Component, OnInit } from '@angular/core';
 
 
 
-export class TopBannerComponent implements OnInit {
+export class TopBannerComponent implements OnInit,AfterViewInit {
   storeName = "My Shop";
   leftMenuComponent : LeftMenuComponent = new LeftMenuComponent(this.commonService);
   constructor(private commonService:CommonMethodsService) {}
-
+ @ViewChild('leftMenu') left:LeftMenuComponent;
   ngOnInit() {
     var s:string = "1";
+  }
+  ngAfterViewInit(){
+
   }
 
   public expandSideBar(event) {
     console.log("category Clicked " + this.commonService.expandSideBar);
-    this.commonService.expandSideBar(event);
-    //this.leftMenuComponent.expandSideBar(event);// = !this.leftMenuComponent.expand;
+   //this.left.expandSideBar(event);
+    this.leftMenuComponent.expandSideBar(event);// = !this.leftMenuComponent.expand;
     }
 
 }
