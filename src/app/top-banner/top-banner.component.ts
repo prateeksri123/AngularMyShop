@@ -10,22 +10,21 @@ import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 
 
 
-export class TopBannerComponent implements OnInit,AfterViewInit {
+export class TopBannerComponent implements OnInit, AfterViewInit {
   storeName = "My Shop";
-  leftMenuComponent : LeftMenuComponent = new LeftMenuComponent(this.commonService);
-  constructor(private commonService:CommonMethodsService) {}
- @ViewChild('leftMenu') left:LeftMenuComponent;
+  leftMenuComponent: LeftMenuComponent = new LeftMenuComponent(this.commonService);
+  constructor(private commonService: CommonMethodsService) { }
+  @ViewChild('leftMenu') left: LeftMenuComponent;
   ngOnInit() {
-    var s:string = "1";
+    var s: string = "1";
   }
-  ngAfterViewInit(){
+  ngAfterViewInit() {
 
   }
 
   public expandSideBar(event) {
-    console.log("category Clicked " + this.commonService.expandSideBar);
-   //this.left.expandSideBar(event);
+
     this.leftMenuComponent.expandSideBar(event);// = !this.leftMenuComponent.expand;
-    }
+  }
 
 }
