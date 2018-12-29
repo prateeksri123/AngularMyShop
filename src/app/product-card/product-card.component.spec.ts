@@ -1,21 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { ProductCardComponent } from './product-card.component';
 
-import { MainPageComponent } from './main-page.component';
-
-describe('MainPageComponent', () => {
-  let component: MainPageComponent;
-  let fixture: ComponentFixture<MainPageComponent>;
+describe('ProductCardComponent', () => {
+  let component: ProductCardComponent;
+  let fixture: ComponentFixture<ProductCardComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MainPageComponent ]
+      declarations: [ ProductCardComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(MainPageComponent);
+    fixture = TestBed.createComponent(ProductCardComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

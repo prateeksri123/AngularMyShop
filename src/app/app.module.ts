@@ -8,6 +8,7 @@ import { TopBannerComponent } from './top-banner/top-banner.component';
 import { FooterComponent } from './footer/footer.component';
 import { LeftMenuComponent } from './left-menu/left-menu.component';
 import { MainPageComponent } from './main-page/main-page.component';
+import { ProductCardComponent } from './product-card/product-card.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { MainPageComponent } from './main-page/main-page.component';
     TopBannerComponent,
     FooterComponent,
     LeftMenuComponent,
-    MainPageComponent
+    MainPageComponent,
+    ProductCardComponent
   ],
   imports: [
     BrowserModule
