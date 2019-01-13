@@ -1,3 +1,3 @@
-<div *ngFor="let product of productList">
-    <app-product-card product="product"></app-product-card>  
+<div *ngFor="let product of productList" id="mainPageContainer">
+    <app-product-card product={{product.productName}}></app-product-card>  
 </div>

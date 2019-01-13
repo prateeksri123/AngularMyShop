@@ -12,6 +12,15 @@ export class MainPageComponent implements OnInit {
   public productList = [
     { productName: 'LAWMAN PG3 Stylish & Latest Sneakers Sports & Running Shoes for Men & Boys ', age: 21 },
     { productName: 'Todd', age: 24 },
+    { productName: 'Lisa', age: 18 },
+    { productName: 'LAWMAN PG3 Stylish & Latest Sneakers Sports & Running Shoes for Men & Boys ', age: 21 },
+    { productName: 'Todd', age: 24 },
+    { productName: 'Lisa', age: 18 },
+    { productName: 'LAWMAN PG3 Stylish & Latest Sneakers Sports & Running Shoes for Men & Boys ', age: 21 },
+    { productName: 'Todd', age: 24 },
+    { productName: 'Lisa', age: 18 },
+    { productName: 'LAWMAN PG3 Stylish & Latest Sneakers Sports & Running Shoes for Men & Boys ', age: 21 },
+    { productName: 'Todd', age: 24 },
     { productName: 'Lisa', age: 18 }
   ];
 

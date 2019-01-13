@@ -5,4 +5,9 @@ p { word-break: break-all;
     width: 200px;
     border: 2px;
     border-style: outset;
+    
+}
+.price {
+    color: blue;
+    
 }
